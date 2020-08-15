@@ -25,3 +25,5 @@ echo "Array: "${result[@]}
 
 sorting1=($(echo ${operation[@]} | tr " " "\n" | sort -nr))
 echo "Descending Order: ${sorting1[@]}"
+sorting2=($(echo ${operation[@]} | tr " " "\n" | sort -n))
+echo "Ascending Order: ${sorting2[@]}"
