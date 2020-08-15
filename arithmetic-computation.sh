@@ -18,7 +18,10 @@ echo ${operation[@]}
 
 for i in {1..4}
 do
-	result[$i]=${compute[$i]}
+	result[$i]=${operation[$i]}
 done
 
 echo "Array: "${result[@]}
+
+sorting1=($(echo ${operation[@]} | tr " " "\n" | sort -nr))
+echo "Descending Order: ${sorting1[@]}"
