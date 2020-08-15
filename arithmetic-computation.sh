@@ -7,7 +7,9 @@ read b
 echo "enter the value of c: "
 read c
 
-operation=$((a+b*c))
-operation=$((a*b+c))
-operation=$((c+a/b))
-operation=$((a%b+c))
+operation[1]=$((a+b*c))
+operation[2]=$((a*b+c))
+operation[3]=$((c+a/b))
+operation[4]=$((a%b+c))
+
+echo ${operation[@]}
