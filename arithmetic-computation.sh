@@ -1,4 +1,7 @@
 #!/bin/bash
-read -p "Enter int1: " a
-read -p "Enter int2: " b
-read -p "Enter int1: " c
+read -p "Enter the value  of a = " val_a
+read -p "Enter the value  of b = " val_b
+read -p "Enter the value  of c = " val_c
+
+exp1=$(($vara+$varb*$varc))
+	echo " a+b*c = " $exp1
