@@ -1,7 +1,11 @@
-#!/bin/bash
-read -p "Enter the value  of a = " val_a
-read -p "Enter the value  of b = " val_b
-read -p "Enter the value  of c = " val_c
+#! /bin/bash -x
 
-exp1=$(($vara+$varb*$varc))
-	echo " a+b*c = " $exp1
+echo "enter the value of a: "
+read a
+echo "enter the value of b: "
+read b
+echo "enter the value of c: "
+read c
+
+operation=$((a+b*c))
+operation=$((a*b+c))
