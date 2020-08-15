@@ -9,3 +9,4 @@ read c
 
 operation=$((a+b*c))
 operation=$((a*b+c))
+operation=$((c+a/b))
